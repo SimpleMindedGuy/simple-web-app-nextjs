@@ -1,3 +1,141 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* css reset end  */
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -5,73 +143,52 @@
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --Outer-Rounded-Size: .4rem;
+  --Inner-Rounded-Size: .2rem;
 
-  --primary-glow: conic-gradient(
-    from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
-    transparent 360deg
-  );
-  --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
+  --Grid-Item-Size: 2.4rem;
 
-  --tile-start-rgb: 239, 245, 249;
-  --tile-end-rgb: 228, 232, 233;
-  --tile-border: conic-gradient(
-    #00000080,
-    #00000040,
-    #00000030,
-    #00000020,
-    #00000010,
-    #00000010,
-    #00000080
-  );
+  --xThin-Spacing: .1rem;
+  --Thin-Spacing: .2rem;
+  --Mid-Spacing: .4rem;
+  --Thick-Spacing: .6rem;
+  --xThick-Spacing: 1.0rem;
 
-  --callout-rgb: 238, 240, 241;
-  --callout-border-rgb: 172, 175, 176;
-  --card-rgb: 180, 185, 188;
-  --card-border-rgb: 131, 134, 135;
+
+  --ScrollBar-Thic-Spacing: 0.5rem;
+  --ScrollBar-Thin-Spacing: 0.3rem;
+
+  --Wall-color: #111111;
+  --BG-Odd-color: #3D4155;
+  --BG-Even-color: #24313D;
+  --Inactive-color: #b1b1b1;
+  --FG-color: #ffffff;
+  --Accent-color: #AB81FA;
+  --Notice-color: #21E1E1;
+  --Info-color: #03C988;
+  --Important-color: #ffcc33;
+  --Warning-color: #F39422;
+  --Danger-color: #ED2B2A;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
 
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
-    );
-
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
-
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
+    --Wall-color: #111111;
+    --BG-Odd-color: #3D4155;
+    --BG-Even-color: #24313D;
+    --Inactive-color: #b1b1b1;
+    --FG-color: #ffffff;
+    --Accent-color: #AB81FA;
+    --Notice-color: #21E1E1;
+    --Info-color: #03C988;
+    --Important-color: #ffcc33;
+    --Warning-color: #F39422;
+    --Danger-color: #ED2B2A;
   }
 }
+
+
 
 * {
   box-sizing: border-box;
@@ -79,29 +196,139 @@
   margin: 0;
 }
 
+/* scroll bar start */
+
+*::-webkit-scrollbar {
+  position: absolute;
+  border-radius: var(--Inner-Rounded-Size);
+  background-color: var(--Wall-color);
+  width: var(--xThin-Spacing);
+}
+
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: var(--Accent-color);
+  filter: brightness(110%)
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: var(--Inner-Rounded-Size);
+  background-color: var(--Accent-color);
+  width: var(--xThin-Spacing);
+}
+
+@supports (-moz-appearance: none) {
+  * {
+    scrollbar-color: var(--Accent-color) var(--Wall-color);
+    scrollbar-width: thin;
+    scrollbar-gutter: unset;
+
+  }
+}
+
+/* scroll bar end */
+
+
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  color: var(--FG-color);
+  background-color: var(--Wall-color);
+
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.Even {
+  background-color: var(--BG-Even-color);
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.Odd {
+  background-color: var(--BG-Odd-color);
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+
+.Page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--Thick-Spacing);
+
+  align-items: center;
+  height: 100dvh;
+}
+
+
+.Card {
+
+  border-radius: var(--Outer-Rounded-Size);
+  padding: var(--Thin-Spacing);
+  width: 10rem;
+  height: 10rem;
+
+  overflow: hidden;
+}
+
+
+.Container {
+  display: block;
+
+  overflow-y: auto;
+
+  width: 100%;
+  height: 100%;
+}
+
+.List {
+  display: flex;
+  flex-direction: column;
+  gap: var(--Mid-Spacing);
+  width: -moz-available;
+  overflow-y: auto;
+  height: 100%;
+
+  padding: 0;
+  border-radius: var(--Inner-Rounded-Size);
+  padding-inline-end: var(--ScrollBar-Thin-Spacing);
+}
+
+.List-Item {
+
+  width: 100%;
+  flex-shrink: 0;
+  padding: var(--Thin-Spacing);
+  border-radius: var(--Inner-Rounded-Size);
+  display: flex;
+  line-clamp: 1;
+  align-content: center;
+  justify-content: start;
+}
+
+.Grid {
+  display: flex;
+  gap: var(--Mid-Spacing);
+
+
+  flex-flow: row;
+  flex-wrap: wrap;
+
+  grid-template-columns: repeat(auto-fit, var(--Grid-Item-Size));
+  grid-auto-flow: dense;
+
+  justify-content: space-between;
+
+  flex-basis: 2.4rem;
+
+  padding-inline-end: var(--ScrollBar-Thin-Spacing);
+}
+
+.Grid-Item {
+  display: grid;
+  aspect-ratio: 1/1;
+
+
+  border-radius: var(--Outer-Rounded-Size);
+  padding: var(--Thin-Spacing);
+  place-items: center;
+
+  width: var(--Grid-Item-Size);
+
 }

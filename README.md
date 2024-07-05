@@ -1,3 +1,82 @@
+In the name of Allah the most beneficent the most merciful
+
+# Simple Web App Next
+
+This is a simple web application.
+
+It is a rework of my older project SWA simple web app.
+
+This project is still under development.
+
+Once this project is done, it should be able to function similar to a social media platform, with all expected features, like different types of uploads, comments, likes/dislikes, user-groups and group permissions, groups, tags.
+
+## Progress
+
+- [ ] Make all the UI elements
+
+  - [ ] Navigation bar/menus
+  - [ ] List
+    - [ ] Draggable List
+      - [ ] Kanban Lists
+      - [ ] Ordered Lists
+      - [ ] Unordered Lists
+  - [ ] Grid
+  - [ ] Drop-Down
+    - [ ] Floating
+    - [ ] Collapsing
+    - [ ] Sliding
+  - [ ] Post
+    - [ ] Layout
+    - [ ] Date-Info
+    - [ ] Upload User
+    - [ ] Edit Menu
+    - [ ] Type
+    - [ ] Comments
+  - [ ] Forms
+    - [ ] Post forms
+    - [ ] Comments forms
+    - [ ] User profile forms
+  - [ ] Site Settings.
+    - [ ] Default Icon
+    - [ ] Site favcon
+    - [ ] Groups permissions
+    - [ ] User management
+      - [ ] Active users.
+      - [ ] Banned/Suspend Users.
+      - [ ] Banned/Suspend IP addresses. (maybe wont bother with this)
+    - [ ] Site Groups Management
+      - [ ] Active groups.
+      - [ ] Banned/Suspended Groups.
+
+- [ ] Make All Back-End functions
+  - [ ] CRUD functions
+    - [ ] User Related
+      - [ ] Creating users
+      - [ ] Deleting users
+      - [ ] Editing users
+      - [ ] Suspending/Banning users
+    - [ ] User-Groups related
+      - [ ] Creating groups
+      - [ ] Deleting groups
+      - [ ] Editing groups
+    - [ ] Uploads related
+      - [ ] Creating posts
+      - [ ] Deleting posts
+      - [ ] Editing posts
+      - [ ] Creating comments
+      - [ ] Deleting comments
+      - [ ] Editing comments
+    - [ ] Data Filtering
+      - [ ] Filtering posts / comments by date / user / groups / Comments / Likes / Dislikes.
+      - [ ] Hiding posts / comments / users / groups based on users..
+      - [ ] Other functions ?
+  - [ ] Authentication
+  - [ ] Email Server
+  - [ ] User tokens
+  - [ ] Cashing
+  - [ ] Image Processing
+  - [ ] Video/Audio/Image encoding
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
