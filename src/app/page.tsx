@@ -1,47 +1,72 @@
-import Image from "next/image";
 
-import DropDown from "@/partials/Drop-Down";
+import AlternatingView from '@/partials/AlternatingView';
+import Card from '@/partials/Card';
+import CollapseListItem from "@/partials/CollapseListItem";
 import List from "@/partials/List";
 import ListItem from "@/partials/List-Item";
-import Grid from "@/partials/Grid";
-import GridItem from "@/partials/Grid-Item";
-
 
 export default function Home() {
+
   return (
-    <div
-      className="Page">
 
+    <AlternatingView className={'Page'}>
 
-      <DropDown>
+      <CollapseListItem isEven={false} alternate Label={"Collapse Menu"} >
         <List>
-          <ListItem></ListItem>
-          <ListItem></ListItem>
-          <ListItem></ListItem>
-          <ListItem></ListItem>
-          <ListItem></ListItem>
-          <ListItem></ListItem>
-          <ListItem></ListItem>
+          <ListItem >list Item</ListItem>
+          <ListItem >list Item</ListItem>
+          <ListItem >list Item</ListItem>
+
+          <CollapseListItem alternate Label={"Collapse Menu"} >
+            <List>
+              <ListItem >list Item</ListItem>
+              <ListItem >list Item</ListItem>
+              <ListItem >list Item</ListItem>
+              <CollapseListItem alternate Label={"Collapse Menu"} >
+                <List>
+                  <ListItem >list Item</ListItem>
+                  <ListItem >list Item</ListItem>
+                  <ListItem >list Item</ListItem>
+                </List>
+              </CollapseListItem>
+            </List>
+          </CollapseListItem>
         </List>
-      </DropDown>
 
-      <DropDown>
+      </CollapseListItem>
 
-        <Grid>
 
-          <GridItem></GridItem>
-          <GridItem></GridItem>
-          <GridItem></GridItem>
-          <GridItem></GridItem>
-          <GridItem></GridItem>
-          <GridItem></GridItem>
-          <GridItem></GridItem>
-          <GridItem></GridItem>
-          <GridItem></GridItem>
-          <GridItem></GridItem>
-        </Grid>
-      </DropDown>
+      <Card isEven={true} alternate >
+        <List>
+          <CollapseListItem alternate Label={"Collapse Menu"} >
+            <List>
+              <CollapseListItem alternate Label={"Collapse Menu"} >
+                <List>
+                  <ListItem >list Item</ListItem>
+                  <ListItem >list Item</ListItem>
+                  <ListItem >list Item</ListItem>
+                  <CollapseListItem alternate Label={"Collapse Menu"} >
+                    <List>
+                      <ListItem >list Item</ListItem>
+                      <ListItem >list Item</ListItem>
+                      <ListItem >list Item</ListItem>
+                    </List>
+                  </CollapseListItem>
+                </List>
+              </CollapseListItem>
+              <ListItem >list Item</ListItem>
+              <ListItem >list Item</ListItem>
+              <ListItem >list Item</ListItem>
+              <ListItem >list Item</ListItem>
+              <ListItem >list Item</ListItem>
+              <ListItem >list Item</ListItem>
+            </List>
+          </CollapseListItem>
+          <ListItem >list Item</ListItem>
+          <ListItem >list Item</ListItem>
+        </List>
+      </Card >
+    </AlternatingView>
 
-    </div>
   );
 }

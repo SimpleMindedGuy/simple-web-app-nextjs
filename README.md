@@ -68,7 +68,7 @@ Once this project is done, it should be able to function similar to a social med
       - [ ] Editing comments
     - [ ] Data Filtering
       - [ ] Filtering posts / comments by date / user / groups / Comments / Likes / Dislikes.
-      - [ ] Hiding posts / comments / users / groups based on users..
+      - [ ] Hiding posts / comments / users / groups based on users.
       - [ ] Other functions ?
   - [ ] Authentication
   - [ ] Email Server
