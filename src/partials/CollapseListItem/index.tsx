@@ -6,18 +6,34 @@ import Collapse from "../Collapse";
 
 import { I_UniversalProp } from "@/lip/interface";
 
-export interface CollapseProps extends HTMLAttributes<HTMLElement>, I_UniversalProp {
-  Label: string;
-  SectionClassName?: string,
-  LabelClassName?: string,
-  DropDownClassName?: string,
+/**
+ * @property {string} label - Text to display at the Label section.
+ * @property {string} sectionClassName - Class name for the Section that contains both the label and collapse
+ * @property  {string} labelClassName - Class name for the Label Element
+ * @property {string} collapseClassName - Class name for the collapse component
+ * @extends {HTMLAttributes<HTMLElement>}
+ * @extends {I_UniversalProp}
+ * @interface
+ */
+export interface CollapseListItemProps extends HTMLAttributes<HTMLElement>, I_UniversalProp {
+  label: string;
+  sectionClassName?: string,
+  labelClassName?: string,
+  collapseClassName?: string,
 
 }
 
-const CollapseListItem = ({ ...rest }: CollapseProps) => {
+/**
+ * Renders an Item contain A label, that toggles The collapse Section.
+ * and Collapse Component
+ *
+ * @param {CollapseListItemProps} CollapseProps- Collapse List Item Properties
+ * @returns {ReactNode}
+ */
+const CollapseListItem = ({ ...rest }: CollapseListItemProps) => {
 
   const [isActive, setActive] = React.useState<boolean>(false)
-  const { isEven, Label, LabelClassName, DropDownClassName, SectionClassName, children } = rest;
+  const { isEven, label, labelClassName, collapseClassName, sectionClassName, children } = rest;
 
 
   function ToggleCollapseMenu(): void {
@@ -26,15 +42,15 @@ const CollapseListItem = ({ ...rest }: CollapseProps) => {
   }
 
   return (
-    <section className={`List-Item ${SectionClassName} ${isEven ? 'Even' : 'Odd'}`}>
+    <section className={`List-Item ${sectionClassName} ${isEven ? 'Even' : 'Odd'}`}>
 
-      <label className={`Pointer ${LabelClassName}`}
+      <label className={`Pointer ${labelClassName}`}
         onClick={
           ToggleCollapseMenu
         }>
-        {Label}
+        {label}
       </label>
-      <Collapse dropClassName={`${DropDownClassName} ${isActive ? '' : 'Inactive'}`} containerClassName={""}>
+      <Collapse collapseClassName={`${collapseClassName} ${isActive ? '' : 'Inactive'}`} containerClassName={""}>
         {children}
       </Collapse>
     </section>

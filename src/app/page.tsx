@@ -11,18 +11,18 @@ export default function Home() {
 
     <AlternatingView className={'Page'}>
 
-      <CollapseListItem isEven={false} alternate Label={"Collapse Menu"} >
+      <CollapseListItem isEven alternate label={"Collapse Menu"} >
         <List>
           <ListItem >list Item</ListItem>
           <ListItem >list Item</ListItem>
           <ListItem >list Item</ListItem>
 
-          <CollapseListItem alternate Label={"Collapse Menu"} >
+          <CollapseListItem alternate label={"Collapse Menu"} >
             <List>
               <ListItem >list Item</ListItem>
               <ListItem >list Item</ListItem>
               <ListItem >list Item</ListItem>
-              <CollapseListItem alternate Label={"Collapse Menu"} >
+              <CollapseListItem alternate label={"Collapse Menu"} >
                 <List>
                   <ListItem >list Item</ListItem>
                   <ListItem >list Item</ListItem>
@@ -36,16 +36,16 @@ export default function Home() {
       </CollapseListItem>
 
 
-      <Card isEven={true} alternate >
+      <Card alternate >
         <List>
-          <CollapseListItem alternate Label={"Collapse Menu"} >
+          <CollapseListItem alternate label={"Collapse Menu"} >
             <List>
-              <CollapseListItem alternate Label={"Collapse Menu"} >
+              <CollapseListItem alternate label={"Collapse Menu"} >
                 <List>
                   <ListItem >list Item</ListItem>
                   <ListItem >list Item</ListItem>
                   <ListItem >list Item</ListItem>
-                  <CollapseListItem alternate Label={"Collapse Menu"} >
+                  <CollapseListItem alternate label={"Collapse Menu"} >
                     <List>
                       <ListItem >list Item</ListItem>
                       <ListItem >list Item</ListItem>

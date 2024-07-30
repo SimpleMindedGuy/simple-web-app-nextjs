@@ -2,14 +2,22 @@
 import React, { ReactNode } from 'react'
 import { HTMLAttributes } from 'react'
 
-import { I_UniversalProp } from '@/lip/interfaces'
+import { I_UniversalProp } from '@/lip/interface'
 
-interface DropDownProps extends HTMLAttributes<HTMLElement>, I_UniversalProp {
+/**
+ * @interface
+ * @extends {HTMLAttributes<HTMLElement>}
+ * @extends {I_UniversalProp}
+ */
+interface CardProps extends HTMLAttributes<HTMLElement>, I_UniversalProp {
 
-  children: React.ReactNode;
 }
 
-const Card = ({ alternate = true, ...props }: DropDownProps) => {
+/**
+ * @param {CardProps} props -universal component properties.
+ * @returns {ReactNode}
+ */
+const Card = (props: CardProps) => {
   let { isEven, children } = props;
 
 

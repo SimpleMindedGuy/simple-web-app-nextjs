@@ -2,7 +2,7 @@ import React from "react";
 
 import { HTMLAttributes } from "react";
 
-import { I_UniversalProp } from "@/lip/interfaces";
+import { I_UniversalProp } from "@/lip/interface";
 
 interface ListItemProps extends HTMLAttributes<HTMLElement>, I_UniversalProp {
 
