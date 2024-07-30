@@ -14,39 +14,44 @@ Once this project is done, it should be able to function similar to a social med
 
 - [ ] Make all the UI elements
 
-  - [ ] Navigation bar/menus
-  - [ ] List
-    - [ ] Draggable List
-      - [ ] Kanban Lists
-      - [ ] Ordered Lists
-      - [ ] Unordered Lists
-  - [ ] Grid
-  - [ ] Drop-Down
-    - [ ] Floating
-    - [ ] Collapsing
-    - [ ] Sliding
-  - [ ] Post
-    - [ ] Layout
-    - [ ] Date-Info
-    - [ ] Upload User
-    - [ ] Edit Menu
-    - [ ] Type
-    - [ ] Comments
-  - [ ] Forms
-    - [ ] Post forms
-    - [ ] Comments forms
-    - [ ] User profile forms
-  - [ ] Site Settings.
-    - [ ] Default Icon
-    - [ ] Site favcon
-    - [ ] Groups permissions
-    - [ ] User management
-      - [ ] Active users.
-      - [ ] Banned/Suspend Users.
-      - [ ] Banned/Suspend IP addresses. (maybe wont bother with this)
-    - [ ] Site Groups Management
-      - [ ] Active groups.
-      - [ ] Banned/Suspended Groups.
+  - [x] Alternating Colors for Components, and partials.
+  - [ ] Partials
+    - [ ] List
+      - [ ] Un-ordered List.
+      - [ ] ordered List.
+      - [ ] Draggable List
+        - [ ] Kanban Lists
+        - [ ] Ordered Lists
+        - [ ] Unordered Lists
+    - [ ] Grid
+    - [ ] Drop-Down
+      - [ ] Floating
+      - [ ] Collapsing
+      - [ ] Sliding
+  - [ ] Components
+    - [ ] Navigation bar/menus
+    - [ ] Post
+      - [ ] Layout
+      - [ ] Date-Info
+      - [ ] Upload User
+      - [ ] Edit Menu
+      - [ ] Type
+      - [ ] Comments
+    - [ ] Forms
+      - [ ] Post forms
+      - [ ] Comments forms
+      - [ ] User profile forms
+    - [ ] Site Settings.
+      - [ ] Default Icon
+      - [ ] Site favcon
+      - [ ] Groups permissions
+      - [ ] User management
+        - [ ] Active users.
+        - [ ] Banned/Suspend Users.
+        - [ ] Banned/Suspend IP addresses. (maybe wont bother with this)
+      - [ ] Site Groups Management
+        - [ ] Active groups.
+        - [ ] Banned/Suspended Groups.
 
 - [ ] Make All Back-End functions
   - [ ] CRUD functions
